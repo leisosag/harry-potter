@@ -1,0 +1,65 @@
+body {
+  font-family: "Nunito", sans-serif;
+  /*weights: 300, 400, 700*/
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+.jumbotron {
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  color: #fff;
+}
+hr {
+  background-color: #fff;
+}
+li {
+  list-style: none;
+}
+.card img {
+  max-height: 400px;
+}
+.modal-body img {
+  width: 80%;
+}
+.btn:hover {
+  animation-name: salto;
+  animation-duration: 0.4s;
+}
+.btn-Gryffindor {
+  background-color: #b11c20;
+  color: #fff;
+}
+.btn-Gryffindor:hover,
+.btn-Ravenclaw:hover,
+.btn-Slytherin:hover,
+.btn-:hover {
+  color: #fff;
+}
+.btn-Hufflepuff {
+  background-color: #f0c91a;
+}
+.btn-Ravenclaw {
+  background-color: #0775a7;
+  color: #fff;
+}
+.btn-Slytherin {
+  background-color: #259446;
+  color: #fff;
+}
+.btn- {
+  background-color: #666;
+  color: #fff;
+}
+@keyframes salto {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

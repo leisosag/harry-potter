@@ -1,0 +1,25 @@
+{
+  "name": "harry-potter",
+  "version": "1.0.0",
+  "description": "Proyecto para consumir la API de Harry Potter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leisosag/harry-potter.git"
+  },
+  "keywords": [
+    "api",
+    "harry",
+    "potter",
+    "javascript"
+  ],
+  "author": "Leila Sosa Gonzalez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leisosag/harry-potter/issues"
+  },
+  "homepage": "https://github.com/leisosag/harry-potter#readme"
+}
