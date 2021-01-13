@@ -1,4 +1,4 @@
-const url = "http://hp-api.herokuapp.com/api/characters";
+const url = 'https://hp-api.herokuapp.com/api/characters';
 let characters = [];
 let id = 1;
 
@@ -63,30 +63,30 @@ const createCard = ({
                         <div class="row">
                             <div class="col-md-4">
                                 <img src="./img/${
-                                  house ? house : "hogwarts"
+                                  house ? house : 'hogwarts'
                                 }.png" class="mt-2">
                             </div>
                             <div class="col-md-8">
                                 <p>🎂 Birthday: ${
-                                  dateOfBirth ? dateOfBirth : "Unknown"
+                                  dateOfBirth ? dateOfBirth : 'Unknown'
                                 }</p>
                                 <p>🩸 Ancestry: ${
-                                  ancestry ? ancestry : "Unknown"
+                                  ancestry ? ancestry : 'Unknown'
                                 }</p>
                                 <p>🦄 Patronus: ${
-                                  patronus ? patronus : "Unknown"
+                                  patronus ? patronus : 'Unknown'
                                 }</p>
                                 <hr class="my-1">
                                 <p>✨ Wand:</p>  
                                 <ul>
                                     <li>🌱 Wood: ${
-                                      wand.wood ? wand.wood : "Unknown"
+                                      wand.wood ? wand.wood : 'Unknown'
                                     }</li>
                                     <li>❤️ Core: ${
-                                      wand.core ? wand.core : "Unknown"
+                                      wand.core ? wand.core : 'Unknown'
                                     }</li>
                                     <li>📏 Length: ${
-                                      wand.length ? wand.length : "Unknown"
+                                      wand.length ? wand.length : 'Unknown'
                                     }</li>
                                 </ul>
                             </div>
@@ -101,14 +101,14 @@ const createCard = ({
     </div>
     `;
   id++;
-  document.getElementById("resultado").insertAdjacentHTML("beforeend", card);
-  document.getElementById("resultado").insertAdjacentHTML("beforeend", modal);
+  document.getElementById('resultado').insertAdjacentHTML('beforeend', card);
+  document.getElementById('resultado').insertAdjacentHTML('beforeend', modal);
 };
 
 // busca un personaje del input
 const searchCharacter = () => {
-  console.log("buscando");
-  const param = document.getElementById("input").value;
+  console.log('buscando');
+  const param = document.getElementById('input').value;
   const foundCharacter = characters.find(
     (character) => character.name.toLowerCase() === param.toLowerCase()
   );
@@ -128,7 +128,7 @@ const iterateCharacters = (characters) => {
 
 // carga el DOM
 const start = async () => {
-  document.getElementById("search").addEventListener("click", searchCharacter);
+  document.getElementById('search').addEventListener('click', searchCharacter);
   characters = await fetchCharacters(url);
   iterateCharacters(characters);
 };
